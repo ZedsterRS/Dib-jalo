@@ -25,12 +25,6 @@ p {
     color: aliceblue;
     text-align: center;
 }
-button {
-    display: inline-block;
-}
-#button_azul {
-    margin-left: 105px;
-}
 #canvas_dibujo {
     background-color: aliceblue;
     width: 300px;
@@ -50,43 +44,38 @@ footer {
 #button_azul {
     background-color: blue;
     color: white;
-    
+    margin-left: 110px;
+    margin-right: 25px;
 }
 #button_verde {
     background-color: green;
     color: white;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 #button_rojo {
     background-color: red;
     color: black;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 #button_amarillo {
     background-color: yellow;
     color: black;
+    margin-left: 25px;
 }
 .button {
     position: relative;
-    width: 70px;
+    width: 30px;
     height: 30px;
     font-size: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 50%;
     cursor: pointer;
     transition: .5s;
 }
-.button *{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity .25s;
-}
 .icon {
     opacity: 0;
-}
-.button:focus {
-    width: 30px;
-    border-radius: 50%;
 }
 .button:focus .button_text {
     opacity: 0;
@@ -95,9 +84,6 @@ footer {
     opacity: 1;
     transition-delay: .5s;
 }
-#icon_b {
-    color: black;
-}
-#icon_w {
-    color: white;
+.button:focus{
+    border: 1px solid #264653;
 }
